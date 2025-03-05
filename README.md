@@ -1,54 +1,98 @@
-# React + TypeScript + Vite
+# Quiz Master
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple quiz application built with **React**, **TypeScript**, **Vite**, **Zustand**, and **MUI (Material UI)**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+1. [Overview](#overview)
+2. [Project Setup](#project-setup)
+3. [Folder Structure](#folder-structure)
+4. [Usage](#usage)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Overview
+
+This project demonstrates a **Millionaire-style quiz game** that uses:
+
+- **React + Vite** for a fast development environment
+- **TypeScript** for type safety
+- **Zustand** for global state management
+- **MUI** for UI components and theming
+
+Initially, the app uses **hardcoded data** from JSON files (`javascriptQuestions.json`, `historyQuestions.json`) located in the `data` folder. We will enhance these data sources and possibly fetch from APIs in the future.
+
+---
+
+## Project Setup
+
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/your-username/quiz-master.git
+   cd quiz-master
+   ```
+2. **Install dependencies:**
+   ```bash
+   yarn
+   ```
+3. **Start the development server:**
+   ```bash
+   yarn dev
+   ```
+
+---
+
+## Folder Structure
+
+```text
+quiz-master/
+├── data/
+│   ├── historyQuestions.json
+│   └── javascriptQuestions.json
+├── node_modules/
+├── src/
+│   ├── assets/
+│   │   └── (images, icons, etc.)
+│   ├── components/
+│   │   ├── Info.tsx            # Displays quiz progress
+│   │   ├── QuizGame.tsx        # Main quiz game logic (questions, answers)
+│   │   ├── QuizResults.tsx     # End-of-quiz results screen
+│   │   └── ThemeSwitcher.tsx   # SpeedDial or UI to switch between multiple themes
+│   ├── store/
+│   │   ├── quiz/
+│   │   │   ├── basicQuizStore.ts
+│   │   │   ├── index.ts
+│   │   │   ├── initialValues.ts
+│   │   │   └── store.types.ts
+│   │   └── theme/
+│   │       ├── index.ts
+│   │       ├── themeStore.ts
+│   │       ├── themes.ts
+│   │       └── store.types.ts
+│   │
+│   ├── App.tsx
+│   └── ThemeWrapper.tsx        # Wraps the app with MUI ThemeProvider
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── tsconfig.json
+└── yarn.lock
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Usage
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. **Play the Game:**
+
+- Answer each question.
+- Navigate through Next / Previous buttons.
+- View the final score on the results screen.
+- Start over by clicking "reset".
+
+2. **Change themes:**
+   Use SpeedDial component to toggle between different themes in real-time.

@@ -1,4 +1,3 @@
-// src/ThemeSwitcher.tsx
 import React from "react";
 import { SpeedDial, SpeedDialAction, SpeedDialIcon } from "@mui/material";
 import { ThemeKey, useThemeStore } from "../store";

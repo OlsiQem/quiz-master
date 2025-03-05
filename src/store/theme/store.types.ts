@@ -1,4 +1,4 @@
-import { themes } from "./theme";
+import { themes } from "./themes";
 
 export type ThemeKey = keyof typeof themes;
 
