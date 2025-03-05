@@ -1,2 +1,2 @@
-export * from "./basicQuizStore";
-export * from "./store.types";
+export * from "./quiz";
+export * from "./theme";

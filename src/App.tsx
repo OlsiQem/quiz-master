@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import { AnswerIndex, useQuizStore } from "./store";
+import ThemeSwitcher from "./components/ThemeSwitcher";
 
 const Info: React.FC = () => {
   const currentQuestion = useQuizStore((state) => state.currentQuestion);
@@ -117,6 +118,7 @@ const App: React.FC = () => {
           <Info />
         </Paper>
       )}
+      <ThemeSwitcher />
     </Container>
   );
 };

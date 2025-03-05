@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { BasicQuizStore, optionCodes } from "./store.types";
 import { defaultStoreValues } from "./initialValues";
-import javascriptQuestions from "../../data/javascriptQuestions.json";
+import javascriptQuestions from "../../../data/javascriptQuestions.json";
 
 export const useQuizStore = create<BasicQuizStore>((set) => ({
   ...defaultStoreValues,

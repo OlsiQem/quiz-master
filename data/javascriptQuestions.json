@@ -55,160 +55,212 @@
       "hint": "Recall the JavaScript primitives: string, number, boolean, null, undefined, and symbol."
     },
     {
-      "question": "What is the output of typeof null in JavaScript?",
+      "question": "What does the '===' operator check in JavaScript?",
       "options": [
         {
-          "answer": "null",
+          "answer": "Equality of value only",
           "isCorrect": false,
-          "explanation": "Although it might seem logical, typeof null does not return 'null'."
+          "explanation": "The '==' operator checks for value equality, not '==='."
         },
         {
-          "answer": "object",
+          "answer": "Equality of type only",
+          "isCorrect": false,
+          "explanation": "The operator does not check type alone."
+        },
+        {
+          "answer": "Equality of both value and type",
           "isCorrect": true,
-          "explanation": "JavaScript returns 'object' for null, which is a well-known quirk."
+          "explanation": "The '===' operator ensures both the value and type match exactly."
+        },
+        {
+          "answer": "It doesn't exist",
+          "isCorrect": false,
+          "explanation": "The '===' operator is a standard operator in JavaScript."
+        }
+      ],
+      "hint": "Think about strict equality in JavaScript."
+    },
+    {
+      "question": "Which method is used to convert JSON text to a JavaScript object?",
+      "options": [
+        {
+          "answer": "JSON.parse()",
+          "isCorrect": true,
+          "explanation": "JSON.parse() converts a JSON string into a JavaScript object."
+        },
+        {
+          "answer": "JSON.stringify()",
+          "isCorrect": false,
+          "explanation": "JSON.stringify() converts a JavaScript object into a JSON string."
+        },
+        {
+          "answer": "JSON.objectify()",
+          "isCorrect": false,
+          "explanation": "This method does not exist in JavaScript."
+        },
+        {
+          "answer": "JSON.convert()",
+          "isCorrect": false,
+          "explanation": "This is not a valid JavaScript method."
+        }
+      ],
+      "hint": "Remember the difference between parsing and stringifying JSON data."
+    },
+    {
+      "question": "Which keyword is used to declare a block-scoped variable that can be reassigned?",
+      "options": [
+        {
+          "answer": "var",
+          "isCorrect": false,
+          "explanation": "var declares a function-scoped variable, not block-scoped."
+        },
+        {
+          "answer": "let",
+          "isCorrect": true,
+          "explanation": "let declares a block-scoped variable and allows reassignment."
+        },
+        {
+          "answer": "const",
+          "isCorrect": false,
+          "explanation": "const declares a block-scoped variable that cannot be reassigned."
+        },
+        {
+          "answer": "block",
+          "isCorrect": false,
+          "explanation": "There is no 'block' keyword for declaring variables in JavaScript."
+        }
+      ],
+      "hint": "Consider the ES6 keywords introduced for variable declarations."
+    },
+    {
+      "question": "What is the result of '2' + 2 in JavaScript?",
+      "options": [
+        {
+          "answer": "4",
+          "isCorrect": false,
+          "explanation": "Because of type coercion, addition results in string concatenation rather than arithmetic addition."
+        },
+        {
+          "answer": "22",
+          "isCorrect": true,
+          "explanation": "The number 2 is coerced to a string, so '2' + 2 results in '22'."
+        },
+        {
+          "answer": "NaN",
+          "isCorrect": false,
+          "explanation": "NaN is not produced in this operation."
+        },
+        {
+          "answer": "Error",
+          "isCorrect": false,
+          "explanation": "This operation does not cause an error in JavaScript."
+        }
+      ],
+      "hint": "Remember that the '+' operator can concatenate strings when one operand is a string."
+    },
+    {
+      "question": "Which array method is used to remove the last element from an array?",
+      "options": [
+        {
+          "answer": "shift()",
+          "isCorrect": false,
+          "explanation": "shift() removes the first element of an array."
+        },
+        {
+          "answer": "pop()",
+          "isCorrect": true,
+          "explanation": "pop() removes and returns the last element of an array."
+        },
+        {
+          "answer": "push()",
+          "isCorrect": false,
+          "explanation": "push() adds an element to the end of an array."
+        },
+        {
+          "answer": "slice()",
+          "isCorrect": false,
+          "explanation": "slice() returns a portion of the array but does not modify it."
+        }
+      ],
+      "hint": "Think about which method alters the array by removing an element from the end."
+    },
+    {
+      "question": "When a regular function is invoked as a method of an object, what does 'this' refer to?",
+      "options": [
+        {
+          "answer": "The object that the function belongs to",
+          "isCorrect": true,
+          "explanation": "In a method call, 'this' refers to the object that invoked the function."
+        },
+        {
+          "answer": "The global object",
+          "isCorrect": false,
+          "explanation": "The global object is used only when a function is invoked in a non-method context in non-strict mode."
         },
         {
           "answer": "undefined",
           "isCorrect": false,
-          "explanation": "null is a defined value, so this is not correct."
+          "explanation": "In non-strict mode, 'this' is not undefined during a method call."
         },
         {
-          "answer": "number",
+          "answer": "The function itself",
           "isCorrect": false,
-          "explanation": "This type is returned for NaN, not for null."
+          "explanation": "A function does not reference itself through 'this' in a method invocation."
         }
       ],
-      "hint": "Remember that null is treated as an object in JavaScript due to historical reasons."
+      "hint": "Review how the context of a function call determines the value of 'this'."
     },
     {
-      "question": "Which of the following is not a primitive data type in JavaScript?",
+      "question": "What will be the output of the following code?\n\nconsole.log(0.1 + 0.2 === 0.3);",
       "options": [
         {
-          "answer": "String",
+          "answer": "true",
           "isCorrect": false,
-          "explanation": "String is a primitive data type."
+          "explanation": "Due to floating-point precision issues, the sum is not exactly 0.3."
         },
         {
-          "answer": "Number",
-          "isCorrect": false,
-          "explanation": "Number is a primitive data type."
-        },
-        {
-          "answer": "Boolean",
-          "isCorrect": false,
-          "explanation": "Boolean is a primitive data type."
-        },
-        {
-          "answer": "Object",
+          "answer": "false",
           "isCorrect": true,
-          "explanation": "Object is a reference type, not a primitive."
-        }
-      ],
-      "hint": "Recall the JavaScript primitives: string, number, boolean, null, undefined, and symbol."
-    },
-    {
-      "question": "What is the output of typeof null in JavaScript?",
-      "options": [
-        {
-          "answer": "null",
-          "isCorrect": false,
-          "explanation": "Although it might seem logical, typeof null does not return 'null'."
-        },
-        {
-          "answer": "object",
-          "isCorrect": true,
-          "explanation": "JavaScript returns 'object' for null, which is a well-known quirk."
+          "explanation": "Floating-point arithmetic causes 0.1 + 0.2 to be slightly different from 0.3."
         },
         {
           "answer": "undefined",
           "isCorrect": false,
-          "explanation": "null is a defined value, so this is not correct."
+          "explanation": "The expression returns a boolean, not undefined."
         },
         {
-          "answer": "number",
+          "answer": "Error",
           "isCorrect": false,
-          "explanation": "This type is returned for NaN, not for null."
+          "explanation": "The code runs without error."
         }
       ],
-      "hint": "Remember that null is treated as an object in JavaScript due to historical reasons."
+      "hint": "Consider how floating-point arithmetic works in JavaScript."
     },
     {
-      "question": "Which of the following is not a primitive data type in JavaScript?",
+      "question": "What is the standard syntax for creating an empty object in JavaScript?",
       "options": [
         {
-          "answer": "String",
+          "answer": "var obj = new Object();",
           "isCorrect": false,
-          "explanation": "String is a primitive data type."
+          "explanation": "This is a valid method, but not the most concise one."
         },
         {
-          "answer": "Number",
-          "isCorrect": false,
-          "explanation": "Number is a primitive data type."
-        },
-        {
-          "answer": "Boolean",
-          "isCorrect": false,
-          "explanation": "Boolean is a primitive data type."
-        },
-        {
-          "answer": "Object",
+          "answer": "var obj = {};",
           "isCorrect": true,
-          "explanation": "Object is a reference type, not a primitive."
+          "explanation": "Using object literal syntax is the standard and most concise way to create an empty object."
+        },
+        {
+          "answer": "var obj = Object.create(null);",
+          "isCorrect": false,
+          "explanation": "This creates an object without a prototype, which is less common."
+        },
+        {
+          "answer": "var obj = Object();",
+          "isCorrect": false,
+          "explanation": "While this works, it is less common and not the standard syntax."
         }
       ],
-      "hint": "Recall the JavaScript primitives: string, number, boolean, null, undefined, and symbol."
-    },
-    {
-      "question": "What is the output of typeof null in JavaScript?",
-      "options": [
-        {
-          "answer": "null",
-          "isCorrect": false,
-          "explanation": "Although it might seem logical, typeof null does not return 'null'."
-        },
-        {
-          "answer": "object",
-          "isCorrect": true,
-          "explanation": "JavaScript returns 'object' for null, which is a well-known quirk."
-        },
-        {
-          "answer": "undefined",
-          "isCorrect": false,
-          "explanation": "null is a defined value, so this is not correct."
-        },
-        {
-          "answer": "number",
-          "isCorrect": false,
-          "explanation": "This type is returned for NaN, not for null."
-        }
-      ],
-      "hint": "Remember that null is treated as an object in JavaScript due to historical reasons."
-    },
-    {
-      "question": "Which of the following is not a primitive data type in JavaScript?",
-      "options": [
-        {
-          "answer": "String",
-          "isCorrect": false,
-          "explanation": "String is a primitive data type."
-        },
-        {
-          "answer": "Number",
-          "isCorrect": false,
-          "explanation": "Number is a primitive data type."
-        },
-        {
-          "answer": "Boolean",
-          "isCorrect": false,
-          "explanation": "Boolean is a primitive data type."
-        },
-        {
-          "answer": "Object",
-          "isCorrect": true,
-          "explanation": "Object is a reference type, not a primitive."
-        }
-      ],
-      "hint": "Recall the JavaScript primitives: string, number, boolean, null, undefined, and symbol."
+      "hint": "Recall that the object literal {} is widely used for its simplicity."
     }
   ]
 }

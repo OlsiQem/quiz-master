@@ -1,5 +1,5 @@
 import { BasicQuizState, BasicQuizStore } from "./store.types";
-import javascriptQuestions from "../../data/javascriptQuestions.json";
+import javascriptQuestions from "../../../data/javascriptQuestions.json";
 
 export const defaultStoreValues: BasicQuizState = {
   quizData: javascriptQuestions as BasicQuizStore["quizData"],
