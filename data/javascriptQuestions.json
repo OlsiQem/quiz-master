@@ -1,0 +1,214 @@
+{
+  "topic": "JavaScript",
+  "difficulty": "medium",
+  "questions": [
+    {
+      "question": "What is the output of typeof null in JavaScript?",
+      "options": [
+        {
+          "answer": "null",
+          "isCorrect": false,
+          "explanation": "Although it might seem logical, typeof null does not return 'null'."
+        },
+        {
+          "answer": "object",
+          "isCorrect": true,
+          "explanation": "JavaScript returns 'object' for null, which is a well-known quirk."
+        },
+        {
+          "answer": "undefined",
+          "isCorrect": false,
+          "explanation": "null is a defined value, so this is not correct."
+        },
+        {
+          "answer": "number",
+          "isCorrect": false,
+          "explanation": "This type is returned for NaN, not for null."
+        }
+      ],
+      "hint": "Remember that null is treated as an object in JavaScript due to historical reasons."
+    },
+    {
+      "question": "Which of the following is not a primitive data type in JavaScript?",
+      "options": [
+        {
+          "answer": "String",
+          "isCorrect": false,
+          "explanation": "String is a primitive data type."
+        },
+        {
+          "answer": "Number",
+          "isCorrect": false,
+          "explanation": "Number is a primitive data type."
+        },
+        {
+          "answer": "Boolean",
+          "isCorrect": false,
+          "explanation": "Boolean is a primitive data type."
+        },
+        {
+          "answer": "Object",
+          "isCorrect": true,
+          "explanation": "Object is a reference type, not a primitive."
+        }
+      ],
+      "hint": "Recall the JavaScript primitives: string, number, boolean, null, undefined, and symbol."
+    },
+    {
+      "question": "What is the output of typeof null in JavaScript?",
+      "options": [
+        {
+          "answer": "null",
+          "isCorrect": false,
+          "explanation": "Although it might seem logical, typeof null does not return 'null'."
+        },
+        {
+          "answer": "object",
+          "isCorrect": true,
+          "explanation": "JavaScript returns 'object' for null, which is a well-known quirk."
+        },
+        {
+          "answer": "undefined",
+          "isCorrect": false,
+          "explanation": "null is a defined value, so this is not correct."
+        },
+        {
+          "answer": "number",
+          "isCorrect": false,
+          "explanation": "This type is returned for NaN, not for null."
+        }
+      ],
+      "hint": "Remember that null is treated as an object in JavaScript due to historical reasons."
+    },
+    {
+      "question": "Which of the following is not a primitive data type in JavaScript?",
+      "options": [
+        {
+          "answer": "String",
+          "isCorrect": false,
+          "explanation": "String is a primitive data type."
+        },
+        {
+          "answer": "Number",
+          "isCorrect": false,
+          "explanation": "Number is a primitive data type."
+        },
+        {
+          "answer": "Boolean",
+          "isCorrect": false,
+          "explanation": "Boolean is a primitive data type."
+        },
+        {
+          "answer": "Object",
+          "isCorrect": true,
+          "explanation": "Object is a reference type, not a primitive."
+        }
+      ],
+      "hint": "Recall the JavaScript primitives: string, number, boolean, null, undefined, and symbol."
+    },
+    {
+      "question": "What is the output of typeof null in JavaScript?",
+      "options": [
+        {
+          "answer": "null",
+          "isCorrect": false,
+          "explanation": "Although it might seem logical, typeof null does not return 'null'."
+        },
+        {
+          "answer": "object",
+          "isCorrect": true,
+          "explanation": "JavaScript returns 'object' for null, which is a well-known quirk."
+        },
+        {
+          "answer": "undefined",
+          "isCorrect": false,
+          "explanation": "null is a defined value, so this is not correct."
+        },
+        {
+          "answer": "number",
+          "isCorrect": false,
+          "explanation": "This type is returned for NaN, not for null."
+        }
+      ],
+      "hint": "Remember that null is treated as an object in JavaScript due to historical reasons."
+    },
+    {
+      "question": "Which of the following is not a primitive data type in JavaScript?",
+      "options": [
+        {
+          "answer": "String",
+          "isCorrect": false,
+          "explanation": "String is a primitive data type."
+        },
+        {
+          "answer": "Number",
+          "isCorrect": false,
+          "explanation": "Number is a primitive data type."
+        },
+        {
+          "answer": "Boolean",
+          "isCorrect": false,
+          "explanation": "Boolean is a primitive data type."
+        },
+        {
+          "answer": "Object",
+          "isCorrect": true,
+          "explanation": "Object is a reference type, not a primitive."
+        }
+      ],
+      "hint": "Recall the JavaScript primitives: string, number, boolean, null, undefined, and symbol."
+    },
+    {
+      "question": "What is the output of typeof null in JavaScript?",
+      "options": [
+        {
+          "answer": "null",
+          "isCorrect": false,
+          "explanation": "Although it might seem logical, typeof null does not return 'null'."
+        },
+        {
+          "answer": "object",
+          "isCorrect": true,
+          "explanation": "JavaScript returns 'object' for null, which is a well-known quirk."
+        },
+        {
+          "answer": "undefined",
+          "isCorrect": false,
+          "explanation": "null is a defined value, so this is not correct."
+        },
+        {
+          "answer": "number",
+          "isCorrect": false,
+          "explanation": "This type is returned for NaN, not for null."
+        }
+      ],
+      "hint": "Remember that null is treated as an object in JavaScript due to historical reasons."
+    },
+    {
+      "question": "Which of the following is not a primitive data type in JavaScript?",
+      "options": [
+        {
+          "answer": "String",
+          "isCorrect": false,
+          "explanation": "String is a primitive data type."
+        },
+        {
+          "answer": "Number",
+          "isCorrect": false,
+          "explanation": "Number is a primitive data type."
+        },
+        {
+          "answer": "Boolean",
+          "isCorrect": false,
+          "explanation": "Boolean is a primitive data type."
+        },
+        {
+          "answer": "Object",
+          "isCorrect": true,
+          "explanation": "Object is a reference type, not a primitive."
+        }
+      ],
+      "hint": "Recall the JavaScript primitives: string, number, boolean, null, undefined, and symbol."
+    }
+  ]
+}
